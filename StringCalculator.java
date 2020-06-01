@@ -1,7 +1,14 @@
 public class StringCalculator {
     public int add(String input) {
         
-        String[] numbers = input.split(",|\n");
+        String delimiter = ",|\n";
+        if (input.startsWith("//")) {
+            String[] parts = input.split("\n", 2);
+            delimiter = parts[0].substring(2);
+            input = parts[1];
+        }
+        
+        String[] numbers = input.split(delimiter);
         
         if (input.isEmpty()) {
             return 0;
