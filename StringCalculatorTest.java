@@ -21,4 +21,9 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertEquals(calculator.add("1 2"), 3);
     }
+    @Test
+    public void stringUnkownShouldReturnCorrect() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(calculator.add("1 2 3 4 5 6"), 21);
+    }
 }
