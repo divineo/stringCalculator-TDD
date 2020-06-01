@@ -24,12 +24,12 @@ public class StringCalculatorTest {
     
     @Test
     public void string12ShouldReturn3() {
-        assertEquals(calculator.add("1 2"), 3);
+        assertEquals(calculator.add("1,2"), 3);
     }
     
     @Test
     public void stringUnkownShouldReturnCorrect() {
-        assertEquals(calculator.add("1 2 3 4 5 6"), 21);
+        assertEquals(calculator.add("1,2,3,4,5,6"), 21);
     }
     
     @Test
