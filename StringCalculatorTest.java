@@ -55,4 +55,9 @@ public class StringCalculatorTest {
         assertEquals(calculator.add("4,2,1001"), 6);
         assertEquals(calculator.add("26969,41\n39,8421"), 80);
     }
+    
+    @Test
+    public void numbersWithDelimiterShouldAdd() {
+        assertEquals(calculator.add("//;\n1;2"), 3);
+    }
 }
