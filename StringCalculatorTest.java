@@ -16,4 +16,9 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertEquals(calculator.add("1"), 1);
     }
+    @Test
+    public void string12ShouldReturn3() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(calculator.add("1 2"), 3);
+    }
 }
